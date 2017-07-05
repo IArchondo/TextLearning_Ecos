@@ -1,0 +1,39 @@
+page2=requests.get("http://www.ecosdelbalon.com/2016/12/adam-lallana-liverpool-juego-interiores-boro-karanka/")
+
+pagina2=page2.content
+soup2=BeautifulSoup(pagina2,'html.parser')
+print(soup2.prettify())
+
+
+[type(item) for item in list(soup2.children)]
+
+dos=list(soup2.children)[2]
+
+list(dos.children)
+[type(item) for item in list(dos.children)]
+
+tres=list(dos.children)[3]
+[type(item) for item in list(tres.children)]
+
+cuatro=list(tres.children)[10]
+[type(item) for item in list(cuatro.children)]
+
+cinco=list(cuatro.children)[1]
+[type(item) for item in list(cinco.children)]
+
+seis=list(cinco.children)[1]
+[type(item) for item in list(seis.children)]
+
+siete=list(seis.children)[9]
+[type(item) for item in list(siete.children)]
+
+ocho=list(siete.children)[1]
+[type(item) for item in list(ocho.children)]
+
+nueve=list(ocho.children)[9]
+[type(item) for item in list(nueve.children)]
+
+diez=list(nueve.children)[11]
+
+[type(item) for item in list(diez.children)]
+
